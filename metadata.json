@@ -1,0 +1,7 @@
+{
+  "name": "Creating Dental Excellence - Performance Dentistry",
+  "description": "A high-performance, energetic, and modern dental practice website featuring sleek dark aesthetics, AI-powered treatment guidance, and comprehensive service listings.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
