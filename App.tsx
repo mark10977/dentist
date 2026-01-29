@@ -2,12 +2,17 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
 import Services from './components/Services';
+import Implants from './components/Implants';
 import Doctors from './components/Doctors';
+import Gallery from './components/Gallery';
+import Reviews from './components/Reviews';
 import Pricing from './components/Pricing';
 import Timetable from './components/Timetable';
 import Blog from './components/Blog';
 import Assistant from './components/Assistant';
+import Locations from './components/Locations';
 import Footer from './components/Footer';
 
 function App() {
@@ -16,7 +21,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
+        
         <section id="stats" className="py-20 bg-cyan-500 text-black overflow-hidden relative">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-black/10 skew-x-12 translate-x-20"></div>
           <div className="container mx-auto px-6 relative z-10">
@@ -35,10 +40,17 @@ function App() {
             </div>
           </div>
         </section>
+
+        <AboutUs />
+        <Services />
+        <Implants />
         <Doctors />
+        <Gallery />
+        <Reviews />
         <Pricing />
         <Blog />
         <Timetable />
+        <Locations />
       </main>
       <Footer />
       <Assistant />

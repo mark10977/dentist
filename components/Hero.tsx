@@ -7,9 +7,9 @@ const Hero: React.FC = () => {
       {/* Background with abstract overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1468494294193-b24f29fadc42?auto=format&fit=crop&q=80&w=2000" 
+          src="https://images.unsplash.com/photo-1445527815219-ecbfec67492e?auto=format&fit=crop&q=80&w=2000" 
           className="w-full h-full object-cover opacity-40 mix-blend-overlay scale-105 animate-slow-zoom" 
-          alt="Dental Lab"
+          alt="High-Tech Dental Facility"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
@@ -61,9 +61,9 @@ const Hero: React.FC = () => {
         <div className="hidden md:block relative group">
           <div className="absolute -inset-4 bg-cyan-500/20 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity"></div>
           <img 
-            src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=1200" 
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200" 
             className="relative rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 border border-white/10"
-            alt="Perfect Smile"
+            alt="Perfect Smile Results"
           />
         </div>
       </div>

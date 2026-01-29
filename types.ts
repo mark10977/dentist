@@ -25,12 +25,21 @@ export interface PricingPlan {
   highlight?: boolean;
 }
 
-export interface Testimonial {
+export interface Review {
   id: string;
   name: string;
   text: string;
   rating: number;
+  date: string;
+  source: string;
+}
+
+export interface GalleryItem {
+  id: string;
+  title: string;
+  description: string;
   image: string;
+  category: 'Implants' | 'Veneers' | 'Whitening' | 'Surgery';
 }
 
 export interface TimetableEntry {
@@ -47,4 +56,16 @@ export interface BlogPost {
   date: string;
   image: string;
   category: string;
+}
+
+export interface LocationInfo {
+  county: string;
+  city: string;
+  name: string;
+  services: string[];
+  address: string;
+  cityStateZip: string;
+  phone: string;
+  websiteLabel: string;
+  websiteUrl: string;
 }

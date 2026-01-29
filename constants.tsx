@@ -1,5 +1,5 @@
 
-import { Service, Doctor, PricingPlan, Testimonial, TimetableEntry, BlogPost } from './types';
+import { Service, Doctor, PricingPlan, Review, TimetableEntry, BlogPost, LocationInfo, GalleryItem } from './types';
 
 export const SERVICES: Service[] = [
   {
@@ -25,6 +25,93 @@ export const SERVICES: Service[] = [
   }
 ];
 
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 'g1',
+    title: 'Full Arch Restoration',
+    description: 'Complete upper and lower implant restoration for maximum performance.',
+    image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=800',
+    category: 'Implants'
+  },
+  {
+    id: 'g2',
+    title: 'Elite Porcelain Veneers',
+    description: 'Digital smile design using custom porcelain architecture.',
+    image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=800',
+    category: 'Veneers'
+  },
+  {
+    id: 'g3',
+    title: 'Surgical Precision',
+    description: 'Complex bone grafting and site preparation for implant success.',
+    image: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=800',
+    category: 'Surgery'
+  }
+];
+
+export const REVIEWS: Review[] = [
+  {
+    id: 'r1',
+    name: 'James Peterson',
+    text: "The technology here is from another planet. Dr. Sigafoos explained the architecture of my new smile in 3D before starting. Unbelievable precision.",
+    rating: 5,
+    date: 'March 2024',
+    source: 'Google'
+  },
+  {
+    id: 'r2',
+    name: 'Melissa Thorne',
+    text: "Fast, efficient, and high energy. I came in for an implant and felt like I was in a high-tech performance center. The results are life-changing.",
+    rating: 5,
+    date: 'April 2024',
+    source: 'Yelp'
+  },
+  {
+    id: 'r3',
+    name: 'David Wilson',
+    text: "Professionalism at its peak. The membership plan makes elite dental care accessible. My implants look and feel 100% natural.",
+    rating: 5,
+    date: 'May 2024',
+    source: 'Zocdoc'
+  }
+];
+
+export const LOCATIONS: LocationInfo[] = [
+  {
+    county: 'ORANGE COUNTY',
+    city: 'Cornwall, NY',
+    name: 'Creating Dental Excellence',
+    services: ['Implant Center', 'Veneer and Aligner Center', 'Adult and Pediatric Dentistry'],
+    address: '222 Main St',
+    cityStateZip: 'Cornwall, NY 12518-1514',
+    phone: '(845) 534-3828',
+    websiteLabel: 'Cornwall Office Website',
+    websiteUrl: 'https://www.creatingdentalexcellence.com/locations.html'
+  },
+  {
+    county: 'WESTCHESTER COUNTY',
+    city: 'Yorktown Heights, NY',
+    name: 'Creating Dental Excellence',
+    services: ['Same Day CEREC Center', 'Implant Center', 'Adult and Pediatric Dentistry'],
+    address: '1940 Commerce St #202',
+    cityStateZip: 'Yorktown Heights, NY 10598-4447',
+    phone: '(914) 243-7373',
+    websiteLabel: 'Yorktown Office Website',
+    websiteUrl: 'https://www.creatingdentalexcellence.com/locations.html'
+  },
+  {
+    county: 'BRONX COUNTY',
+    city: 'The Bronx, NY',
+    name: 'Creating Dental Excellence',
+    services: ['Implant Center', 'Aligner Center', 'Adult and Family Dentistry'],
+    address: '3366 Boston Rd',
+    cityStateZip: 'The Bronx, NY 10469',
+    phone: '(718) 547-5280',
+    websiteLabel: 'Visit Bronx Office',
+    websiteUrl: 'https://www.creatingdentalexcellence.com/locations.html'
+  }
+];
+
 export const INITIAL_BLOGS: BlogPost[] = [
   {
     id: '1',
@@ -34,15 +121,6 @@ export const INITIAL_BLOGS: BlogPost[] = [
     date: '2024-05-15',
     image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
     category: 'Technology'
-  },
-  {
-    id: '2',
-    title: 'Architecture of a Smile',
-    excerpt: 'How we use facial symmetry and golden ratios to design veneers that look natural and perform better.',
-    content: 'A deep dive into the aesthetic principles of modern cosmetic dentistry...',
-    date: '2024-05-10',
-    image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=800',
-    category: 'Cosmetic'
   }
 ];
 
@@ -80,30 +158,6 @@ export const PRICING_PLANS: PricingPlan[] = [
     features: ['Unlimited Exams', '2 Elite Cleanings', 'In-Office Whitening', '25% Off Orthodontics', 'Priority Booking'],
     cta: 'Join Elite',
     highlight: true
-  },
-  {
-    name: 'Restoration Pro',
-    price: '$499',
-    period: 'per month',
-    features: ['Annual CT Scan', 'Periodontal Care', 'Zero Wait Time', '50% Off Specialist Consults'],
-    cta: 'Get Restored'
-  }
-];
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Marcus Chen',
-    text: "The precision and energy here is unmatched. It feels like a high-end performance lab for your health.",
-    rating: 5,
-    image: 'https://picsum.photos/100/100?random=1'
-  },
-  {
-    id: '2',
-    name: 'Elena Rodriguez',
-    text: "I finally have the smile I deserve. The dark, modern atmosphere actually made me feel more relaxed and confident.",
-    rating: 5,
-    image: 'https://picsum.photos/100/100?random=2'
   }
 ];
 

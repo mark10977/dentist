@@ -42,9 +42,9 @@ const Timetable: React.FC = () => {
 
           <div className="relative h-[600px] rounded-3xl overflow-hidden group border border-white/10 shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=1000" 
+              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1000" 
               className="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-[3s] group-hover:scale-110 opacity-60" 
-              alt="Office"
+              alt="State-of-the-Art Dental Office"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
             <div className="absolute bottom-10 left-10 right-10 bg-glass border border-white/10 p-8 rounded-2xl">
